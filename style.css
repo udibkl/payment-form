@@ -1,5 +1,5 @@
 *{
-    background-color: azure;
+    background-color: rgb(255, 255, 255);
 
    
 }
@@ -7,4 +7,50 @@
 
 h1{
     text-align: center;
+}
+#star{
+    color: red;
+    background-color: rgb(255, 255, 255);
+}
+.panel{
+    height: auto;
+    width: 500px;
+}
+.panel:hover{
+    box-sizing: border-box;
+    box-shadow: 5px 9px 8px rgb(255, 255, 255);
+}
+.panel-heading{
+    font-size: xx-large;
+}
+#panel2{
+    width: 600px;
+}
+input{
+    border: 1px solid black;
+}
+input:hover{
+    background-color: lightgrey;
+    border: 1px solid rgb(255, 255, 255);
+}
+.panel-body{
+    background-color: rgb(255, 255, 255);
+}
+
+.form-group{
+    background-color: rgb(255, 255, 255);
+}
+label{
+
+        background-color: rgb(255, 255, 255);
+
+}
+br{
+    background-color: rgb(255, 255, 255);
+}
+#p1{
+  margin-left: 90px;
+}
+.card{
+    width: 50px;
 }
