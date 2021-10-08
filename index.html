@@ -1,71 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-    <link rel="stylesheet" href="style.css" class="css">
+<link rel="stylesheet" href="style.css" class="css">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Payment Form</title>
-</head>
-<body>
-    <form action="" method="POST">
-        <p>
-                Name: * 
-                <input type="text" class="name" name="name" required>
-                </p>
-                
-                <fieldset>
-                <legend>Gender: *</legend>
-                <p>
-                
-                 male<input type="radio" name="gender" id="male" value="Male">
-                female<input type="radio" name="gender" id="female" value="Female" required>
-                </p>
-                
-                </fieldset>
-                
-                <p>
-                
-                Address: *
-                
-                <textarea  name="address" id="address" cols="40" rows="10" required ></textarea> 
-                </p>
-                
-                <p>
-                Email-id: * <input type="email" name="email" id="email" required>
-                </p>
-                
-                <p>
-                Pin-Code * <input type="number" name="pincode" id="pincode" required>
-                </p>
-                
-                <hr>
-                <h2>Payment Details </h2>
-                <p>
-                Card type *
-                <select name="card" id="card">
-                <option value="">---select card type---</option>
-                <option value="visa">visa</option>
-                <option value="mastercard">mastercard</option>
-                <option value="picard">picard</option>
-                </select>
-                
-                <p>
-                Card Number: * <input type="text" name="cno" id="cardnumber" required >
-                CVV :*<input type="password" name="cvv" id="cvv" required>
-                <br>
-                
-                
-                
-                
-                </select>
-                <p>Expiration Date: *<input type="date" name="date" id="date" required></p>
-                
-                <button  type="submit" >Submit</button>
-                <button type="reset">Reset</button>
-                </form>
-                
-                
-</body>
-</html>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
 
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css"
+        integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+        integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous">
+    </script>
+
+    <!-------------------------------------------------------Bootstrap cdn end ------------------------------------------------------------------>
+    <title>Payment Form</title>
+
+</head>
+
+<body align-item="center">
+    <div class="row">
+        <div class="col-md-6"><br>
+            <div class="panel panel-primary" id="p1">
+                <div class="panel-heading"> Your Details</div>
+
+                <form action="form.php" method="POST">
+                    <div class="panel-body">
+                        <div class="form-group">
+                            <label>Name: <span id="star"> *</span></label>
+                            <input type="text" class="name" id="inputtext" placeholder="Enter Your Name" name="name"
+                                required>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label>Gender: <span id="star"> *</span></label>
+                            &nbsp;
+                            male<input type="radio" name="gender" id="male" value="Male">
+                            female<input type="radio" name="gender" id="female" value="Female" required>
+                        </div>
+                        <br>
+
+                        <div class="form-group">
+
+                            <label> Address: <span id="star"> *</span></label>
+
+                            <textarea name="address" id="address" cols="40" rows="10" placeholder="Enter Your Address"
+                                required></textarea>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label>Email-id: <span id="star"> *</span></label> <input type="email" name="email"
+                                id="email" placeholder="Enter Your Email" required>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label>Pin-Code: <span id="star"> *</span></label> <input type="number" name="pincode"
+                                id="pincode" placeholder="Enter Your city's pincode" required>
+                        </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6"><br>
+        <div class="panel panel-primary" id="panel2">
+            <div class="panel-heading">
+                Payment Details</div>
+
+            <form>
+                <div class="panel-body">
+                    <div class="form-group">
+                        Card type <span id="star"> *</span>
+                        <select name="card" id="card">
+                            <option value="">---select card type---</option>
+                            <option value="visa">visa</option>
+                            <option value="mastercard">mastercard</option>
+                            <option value="picard">picard</option>
+                            <option value="picard">RuPay</option>
+                        </select>
+                    </div><br>
+                    <div class="form-group">
+                        Card Number: <span id="star"> *</span> <input type="text" name="cno" id="cardnumber"
+                            placeholder="Enter Your Card no.." required>
+
+                        CVV: <span id="star"> *</span> <input type="password" name="cvv" id="cvv"
+                            placeholder="Enter 3 Digits of cvv" required>
+                    </div><br>
+
+
+                    <div class="form-group">Expiration Date: <span id="star"> *</span> <input type="date" name="date"
+                            id="date" required><br></div>
+                    <br>
+                    <div class="cards">
+                        <img src="mc.png" alt="" id="card">
+                        <img src="pp.png" alt="" id="card">
+                        <img src="vi.png" alt="" id="card">
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <button class="btn-success" type="submit">Submit</button>
+                        &nbsp;&nbsp;<button class="btn-danger" type="reset">Reset</button>
+                    </div>
+            </form>
+        </div>
+    </div>
+    </div>
+    </div>
+</body>
+
+</html>
