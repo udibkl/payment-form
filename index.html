@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="style.css" class="css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Payment Form</title>
+</head>
+<body>
+    <form action="" method="POST">
+        <p>
+                Name: * 
+                <input type="text" class="name" name="name" required>
+                </p>
+                
+                <fieldset>
+                <legend>Gender: *</legend>
+                <p>
+                
+                 male<input type="radio" name="gender" id="male" value="Male">
+                female<input type="radio" name="gender" id="female" value="Female" required>
+                </p>
+                
+                </fieldset>
+                
+                <p>
+                
+                Address: *
+                
+                <textarea  name="address" id="address" cols="40" rows="10" required ></textarea> 
+                </p>
+                
+                <p>
+                Email-id: * <input type="email" name="email" id="email" required>
+                </p>
+                
+                <p>
+                Pin-Code * <input type="number" name="pincode" id="pincode" required>
+                </p>
+                
+                <hr>
+                <h2>Payment Details </h2>
+                <p>
+                Card type *
+                <select name="card" id="card">
+                <option value="">---select card type---</option>
+                <option value="visa">visa</option>
+                <option value="mastercard">mastercard</option>
+                <option value="picard">picard</option>
+                </select>
+                
+                <p>
+                Card Number: * <input type="text" name="cno" id="cardnumber" required >
+                CVV :*<input type="password" name="cvv" id="cvv" required>
+                <br>
+                
+                
+                
+                
+                </select>
+                <p>Expiration Date: *<input type="date" name="date" id="date" required></p>
+                
+                <button  type="submit" >Submit</button>
+                <button type="reset">Reset</button>
+                </form>
+                
+                
+</body>
+</html>
+
