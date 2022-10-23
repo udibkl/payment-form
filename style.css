@@ -1,5 +1,6 @@
 *{
     background-color: rgb(255, 255, 255);
+    font-family: 'Poppins', sans-serif;
 
    
 }
@@ -27,7 +28,8 @@ h1{
     width: 600px;
 }
 input{
-    border: 1px solid black;
+    outline:none;
+    border: 1px solid #161616;
 }
 input:hover{
     background-color: lightgrey;
@@ -46,11 +48,10 @@ label{
 
 }
 br{
-    background-color: rgb(255, 255, 255);
 }
 #p1{
   margin-left: 90px;
 }
 .card{
-    width: 50px;
+    width: 52px;
 }
